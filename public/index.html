@@ -13,10 +13,13 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/3.1.1/css/bootstrap-datetimepicker.css"
     integrity="sha512-xkFDyu2NicVlcLtQkdVuGASfUiu1ebnI6+jUQ0IbZ7moEBTAWB9oMH50r20gpUkEtOY8VZH8Jr9vQ2kazZtfow=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
     crossorigin="anonymous" />
   <!--
       Notice the use of %PUBLIC_URL% in the tags above.
@@ -52,6 +55,8 @@
   <script type="text/javascript">
     $(function () {
       $('#datetimepicker3').datetimepicker({
+        pickDate: false,
+        format: 'LT',
       });
     });
   </script>
