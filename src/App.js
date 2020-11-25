@@ -4,20 +4,19 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="row">
+        <div className='col-sm-6'>
+          <div className="form-group">
+            <div className='input-group date' id='datetimepicker3'>
+              <input type='text' className="form-control" />
+              <span className="input-group-addon">
+                <span className="glyphicon glyphicon-time"></span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
   );
 }
